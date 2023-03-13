@@ -39,5 +39,4 @@ function carrousel_enqueue(){
         <form class="carrousel__form"></form>
         </div>';
     }  
-    
     add_shortcode('carrousel', 'creation_carrousel');
