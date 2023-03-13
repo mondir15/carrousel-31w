@@ -1,6 +1,5 @@
 (function(){
 
     //fonction IFEE
-
-    console.log('debut de carrousel');
+console.log('debut de carrousel');
 })
