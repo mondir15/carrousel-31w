@@ -27,7 +27,6 @@ function carrousel_enqueue(){
     $version_js,
     true);
     }
-    
     add_action('wp_enqueue_scripts', 'carrousel_enqueue');
     
     function creation_carrousel()
