@@ -71,4 +71,32 @@
   display: flex;
   justify-content: center;
   z-index: 12;
+}
+
+/* Flèche gauche */
+.carrousel__fleche--gauche {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 15px solid #fff;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+}
+
+/* Flèche droite */
+.carrousel__fleche--droite {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 15px solid #fff;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
