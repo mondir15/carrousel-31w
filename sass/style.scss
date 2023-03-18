@@ -73,33 +73,54 @@
 
 }
 
-/* Flèche gauche */
-.carrousel__fleche--gauche {
+.arrow {
     position: absolute;
     top: 50%;
-    left: 10px;
     transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-right: 15px solid #fff;
-    border-bottom: 10px solid transparent;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-}
+    z-index: 1;
+  }
+  
+  .arrow--left {
+    left: 20px;
+    background-image: url('chemin/vers/fleche-gauche.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .arrow--right {
+    right: 20px;
+    background-image: url('chemin/vers/fleche-droite.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-/* Flèche droite */
-.carrousel__fleche--droite {
-    position: absolute;
+  .bouton__precedent {
     top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-left: 15px solid #fff;
-    border-bottom: 10px solid transparent;
-    cursor: pointer;
-}
+    left: -3%;
+    position: absolute;
+    z-index: 3;
+    font-size: 32px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;}
+
+    .carrousel .bouton__suivant {
+        top: 50%;
+        left: 99.5%;
+        position: absolute;
+        z-index: 3;
+        font-size: 32px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        border: none;
+    }
+  
 
 
 
