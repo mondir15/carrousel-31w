@@ -20,6 +20,9 @@
 
 
 }
+ h3{
+    text-align: center;
+}
 
 .carrousel--ouvrir {
     transform : scale(1);
@@ -102,23 +105,26 @@
 
   .bouton__precedent {
     top: 50%;
-    left: -3%;
+    left: -5%;
     position: absolute;
     z-index: 3;
-    font-size: 32px;
-    border-radius: 5px;
+    font-size: 40px;
+    border-radius: 10px;
     padding: 5px 10px;
-    border: none;}
+    border: none;
+    background-color: red;
+}
 
     .carrousel .bouton__suivant {
         top: 50%;
-        left: 99.5%;
+        left: 100%;
         position: absolute;
         z-index: 3;
-        font-size: 32px;
-        border-radius: 5px;
+        font-size: 40px;
+        border-radius: 10px;
         padding: 5px 10px;
         border: none;
+        background-color: red;
     }
   
 

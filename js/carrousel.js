@@ -109,5 +109,22 @@
     elmBouton__suivant.addEventListener('click', function(){
         activer__suivant();
     });
+    function activer__suivant() {
+        let index__nouveau = index__precedent + 1;
+        if (index__nouveau >= elmGalerie__img.length) {
+            index__nouveau = 0;
+            elmBouton__suivant.disabled = true; // Disable the "next" button
+        }
+        activer__img(index__nouveau);
+    }
+    function activer__precedent() {
+        let index__nouveau = index__precedent - 1;
+        if (index__nouveau < 0) {
+            index__nouveau = elmGalerie__img.length - 1;
+        }
+        activer__img(index__nouveau);
+        elmBouton__suivant.disabled = false; // Enable the "next" button
+    }
+        
 
 })();
